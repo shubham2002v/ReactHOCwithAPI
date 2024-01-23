@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Style for the overall container */
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for the user container on the left */
+.user-container {
+  flex: 1; /* Takes up 50% of the available space */
+  background-color: #3498db68; /* Set your desired background color */
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for the comment container on the right */
+.comment-container {
+  flex: 1; /* Takes up 50% of the available space */
+  background-color: #e74d3c6d; /* Set your desired background color */
+  padding: 20px;
+}
+
+/* Style for input with 50% width */
+.input-field {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
